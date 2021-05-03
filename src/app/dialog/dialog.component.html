@@ -1,0 +1,12 @@
+<div class="modal">
+  <div class="modal-header">
+    <h3>
+      <ng-content select="[dialog-title]"></ng-content>
+    </h3>
+    <button class="close" (click)="close()">X</button>
+  </div>
+  <div class="modal-body">
+      <ng-content select="[dialog-body]"></ng-content>
+  </div>
+</div>
+<div class="modal-background"></div>

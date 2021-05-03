@@ -7,4 +7,24 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dialog-app';
+
+  showDialog(modal: HTMLElement): void{
+    modal.classList.remove('hidden');
+    modal.classList.add('show');
+  }
+
+  showTextDialog(): void{
+    const modal  = document.getElementById('modal_text');
+    this.showDialog(modal);
+  }
+
+  showFormDialog(): void{
+    const modal  = document.getElementById('modal_form');
+    this.showDialog(modal);
+  }
+
+  showComponentDialog(): void{
+    const modal  = document.getElementById('modal_component');
+    this.showDialog(modal);
+  }
 }

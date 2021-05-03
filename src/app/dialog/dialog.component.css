@@ -1,0 +1,11 @@
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: auto;
+  }
+.modal-header {
+    text-align: center;
+    border-bottom-style: solid;
+    line-height: 10px;
+}
